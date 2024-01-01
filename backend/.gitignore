@@ -1,0 +1,9 @@
+.env.local
+.env.development
+.env.staging
+.env.production
+.env
+
+/tmp
+
+docker-compose-local.yml

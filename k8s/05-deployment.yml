@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+  namespace: massive-uploader
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend-app
+          image: your-image-url-here
+          resources:
+            requests:
+              memory: "220Mi"
+              cpu: "100m"
+            limits:
+              memory: "500Mi"
+              cpu: "300m"
