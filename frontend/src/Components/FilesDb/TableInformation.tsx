@@ -76,7 +76,9 @@ const TableDbInformation: React.FC = () => {
                         {files.map((file: any, index: number) => (
                             <tr key={index}>
                                 <td>{file.ID}</td>
-                                <td>{file.Name}</td>
+                                <td className="d-flex justify-content-between" style={{
+                                    alignItems: 'center',
+                                }}>{file.Name}</td>
                                 <td>{file.CreatedAt}</td>
                                 <td>{file?.Size ? FormatBytes(file.Size) : '0'}</td>
                                 <td>{file.LocationS3 ? 'Yes' : 'No'}</td>

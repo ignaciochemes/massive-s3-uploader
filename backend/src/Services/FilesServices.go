@@ -75,6 +75,9 @@ func ListFiles(sess *session.Session, bucket string, folder string, db *gorm.DB)
 	var filesInfo []*Structs.FileResponse
 	var totalSize int64
 	for _, item := range resp.Contents {
+		if *item.Size == 0 {
+			continue
+		}
 		presignedURL, err := _generatePresignedURL(bucket, *item.Key, db)
 		if err != nil {
 			return nil, 0, err
