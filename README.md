@@ -2,7 +2,7 @@
 
 This is a project that implements a bulk file upload service to Amazon S3, accompanied by a user interface for visualizing and managing the uploaded files.
 
-![262shots_so](https://github.com/ignaciochemes/massive-uploader-s3/assets/54911521/73b7e474-b879-4384-b8df-0a5ed4af43e0)
+![66shots_so](https://github.com/ignaciochemes/massive-s3-uploader/assets/54911521/fe8ff559-eefc-4ed8-8d02-2597014405ff)
 
 ## Features
 
